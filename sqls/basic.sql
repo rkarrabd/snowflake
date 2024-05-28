@@ -88,8 +88,8 @@ use schema CH09;
 	list @~/ch09;
 
 -- lets put a file to user stage
--- put file:///tmp/ch09-data/data.csv @~/ch09/;      put file://C:\Users\saubhaga\Desktop\ch07.csv  @~/ch09/;
--- put file:///tmp/ch09-data/data.html @~/ch09/html auto_compress=false;   put file://C:\Users\saubhaga\Desktop\1.png @~/ch09/png auto_compress=false;
+-- put file:///tmp/ch09-data/data.csv @~/ch09/;      put file://C:\Users\ravinderK\Desktop\ch07.csv  @~/ch09/;
+-- put file:///tmp/ch09-data/data.html @~/ch09/html auto_compress=false;   put file://C:\Users\ravinderK\Desktop\1.png @~/ch09/png auto_compress=false;
 
 	list @~;
 
@@ -105,7 +105,7 @@ use schema CH09;
 -- -----------------------------------
 
 --lets put a file to table stage
---put file:///tmp/ch09-data/test.csv @%customer/ch09/;            put file://C:\Users\saubhaga\Desktop\ch07.csv  @%customer/ch09/;
+--put file:///tmp/ch09-data/test.csv @%customer/ch09/;            put file://C:\Users\ravinderK\Desktop\ch07.csv  @%customer/ch09/;
 
 	list @%customer/;
 	list @%customer/ch09/;
@@ -117,7 +117,7 @@ use schema CH09;
 -- -----------------------------------
     create stage stg01;
 --lets put a file to table stage
---put file:///tmp/ch09-data/test.csv @stg01/ch09/;	    put file://C:\Users\saubhaga\Desktop\data.csv  @stg01/ch09/;
+--put file:///tmp/ch09-data/test.csv @stg01/ch09/;	    put file://C:\Users\ravinderK\Desktop\data.csv  @stg01/ch09/;
 	list @stg01/ch09/;
 
 
@@ -303,8 +303,8 @@ use schema CH09;
 -- put file:///tmp/ch09-data/customer.csv/customer_000.csv @stg_csv/ AUTO_COMPRESS=false;
 -- put file:///tmp/ch09-data/customer.csv/customer_000.csv @stg_none/ AUTO_COMPRESS=false;
 
--- put file://C:\Users\saubhaga\Desktop\data.csv @stg_csv/ AUTO_COMPRESS=false;
--- put file://C:\Users\saubhaga\Desktop\data.csv @stg_none/ AUTO_COMPRESS=false;
+-- put file://C:\Users\ravinderK\Desktop\data.csv @stg_csv/ AUTO_COMPRESS=false;
+-- put file://C:\Users\ravinderK\Desktop\data.csv @stg_none/ AUTO_COMPRESS=false;
 
 		list @stg_none/;
 		list @stg_csv;
